@@ -1,67 +1,67 @@
-# Ev Güvenlik Sistemi
+# Home Security System
 
-Bu proje, ESP32 mikrodenetleyici ve Flutter mobil uygulama kullanarak geliştirilmiş kapsamlı bir ev güvenlik sistemi çözümüdür.
+A comprehensive home security solution developed using ESP32 microcontroller and Flutter mobile application.
 
-## Özellikler
+## Features
 
-### Donanım Bileşenleri
-- ESP32 mikrodenetleyici
-- HC-SR04 ultrasonik mesafe sensörü
-- LCD ekran
-- LED'ler
+### Hardware Components
+- ESP32 microcontroller
+- HC-SR04 ultrasonic distance sensor
+- LCD display
+- LEDs
 - Buzzer
-- Röle
-- RFID kart okuyucu
+- Relay
+- RFID card reader
 
-### Ana Özellikler
-1. **Hareket Algılama Sistemi**
-   - 50cm mesafe eşiğinde hareket algılama
-   - 5 saniye içinde kimlik doğrulama gerekliliği
-   - LCD ekranda durum bildirimleri
+### Main Features
+1. **Motion Detection System**
+   - Motion detection with 50cm distance threshold
+   - Authentication required within 5 seconds
+   - Status notifications on LCD display
 
-2. **Giriş Kontrol Sistemi**
-   - RFID kart ile giriş
-   - PIN kodu doğrulama
-   - 10 saniye yetki süresi
-   - Yetkili/yetkisiz giriş kontrolü
+2. **Access Control System**
+   - RFID card access
+   - PIN code verification
+   - 10-second authorization period
+   - Authorized/unauthorized access control
 
-3. **Flutter Mobil Uygulama**
-   - Gerçek zamanlı sistem durumu izleme
-   - RFID kart yönetimi (ekleme/silme)
-   - Anlık bildirim sistemi
-   - Sistem ayarları yönetimi
+3. **Flutter Mobile Application**
+   - Real-time system status monitoring
+   - RFID card management (add/remove)
+   - Instant notification system
+   - System settings management
 
-## Kurulum
+## Installation
 
-### Donanım Kurulumu
-1. ESP32 bağlantılarını şemaya göre yapın
-2. Sensörleri ve diğer bileşenleri bağlayın
-3. ESP32 kodunu yükleyin
+### Hardware Setup
+1. Connect ESP32 according to the schematic
+2. Connect sensors and other components
+3. Upload ESP32 code
 
-### Mobil Uygulama Kurulumu
-1. Flutter'ı yükleyin
-2. Proje bağımlılıklarını yükleyin:
+### Mobile App Setup
+1. Install Flutter
+2. Install project dependencies:
    ```bash
    flutter pub get
    ```
-3. Uygulamayı derleyin ve çalıştırın:
+3. Build and run the application:
    ```bash
    flutter run
    ```
 
-## Proje Yapısı
-- `/esp32_code` - ESP32 firmware kodları
-- `/lib` - Flutter uygulama kodları
-- `/assets` - Uygulama görselleri ve kaynakları
+## Project Structure
+- `/esp32_code` - ESP32 firmware code
+- `/lib` - Flutter application code
+- `/assets` - Application assets and resources
 
-## Gereksinimler
+## Requirements
 - Flutter SDK
 - Arduino IDE
 - ESP32 Board Manager
-- Gerekli Arduino kütüphaneleri
+- Required Arduino libraries
 
-## Lisans
-Bu proje MIT lisansı altında lisanslanmıştır.
+## License
+This project is licensed under the MIT License.
 
-## İletişim
-Sorularınız ve önerileriniz için lütfen GitHub üzerinden issue açın.
+## Contact
+For questions and suggestions, please open an issue on GitHub.
